@@ -1,3 +1,3 @@
-#Journal de bord du projet encadré
+# Journal de bord du projet encadré
+## le travail sur git 
 
-##le travail sur git 
