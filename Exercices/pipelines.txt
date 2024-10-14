@@ -1,3 +1,5 @@
+Error
+
 txt
  692  cd Exercices
   693  echo "Annotations en 2016 :" > comptes.txt
