@@ -1,12 +1,7 @@
-  685  grep -r "2017" Exercice1/hxt/ann/2017 | wc -l >> comptes.txt
-  686  echo "Annotations en 2018 :" >> comptes.txt
-  687  grep -r "2018" Exercice1/hxt/ann/2018 | wc -l >> comptes.txt
-  688  cat comptes.txt
-  689  git add comptes.txt
-  690  git status
-  691  cd /home/hxt/PPE1-2024/
-  692  cd Exercices
+txt
+ 692  cd Exercices
   693  echo "Annotations en 2016 :" > comptes.txt
+  694  cat comptes.txt
   695  grep -r "2016" Exercice1/hxt/ann/2016 | wc -l >> comptes.txt
   696  grep -r "2016" /home/hxt/Exercice1/hxt/ann/2016/*.ann | wc -l >> comptes.txt
   697  cd
@@ -23,16 +18,9 @@
   708  nano comptes.txt
   709  git add comptes.txt
   710  git commit -m "Compter le nombre d’annotations par année"
-  711  git pull
-  712  git push
-  713  git pull --no-rebase
-  714  git pull
-  715  git push
   716  git pull
   717  git push
-  718  cat compts.txt
   719  cat comptes.txt
-  720  rm compte.txt  # 或者删除 comptes.txt，根据你的选择
   721  git add comptes.txt
   722  git commit -m "Compter le nombre d’annotations par année"
   723  git push
@@ -40,7 +28,7 @@
   725  echo "Location en 2016 :" > Locations.txt
   726  cd
   727  grep -r "Location" Exercice1/hxt/2016/ann | wc -l >> Locations.txt
-  728  grep -r "Location" Exercice1/hxt/ann/2016 | wc -l >> Locations.txt
+  728  grep -r "Location" Exercice1/hxt/ann/2016 | wc -l >> PPE1-2024/Exercices/Locations.txt
   729  echo "Location en 2017 :" >> PPE1-2024/Exercices/Locations.txt
   730  grep -r "Location" Exercice1/hxt/ann/2017 | wc -l >> PPE1-2024/Exercices/Locations.txt
   731  echo "Location en 2018 : " >> PPE1-2024/Exercices/Locations.txt
@@ -64,11 +52,8 @@
   749  PPE1-2024/Exercices/classement_2017.txt
   750  cat PPE1-2024/Exercices/classement_2017.txt
   751  grep -r  "Location" Exercice1/hxt/ann/2018 | cut -f3 | sort | uniq -c | sort -nr | head -15 > PPE1-2024/Exercices/classement_2018.txt
-  752  cd PPE1-2014/Exercices
-  753  cd PPE1-2014/Exercices/
   754  cd PPE1-2024
   755  cd Exercices
-  756  git add.
   757  git add .
   758  git commit -m "classments"
   759  git pull
