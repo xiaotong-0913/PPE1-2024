@@ -1,4 +1,6 @@
-Annotations en 2016 : 1009
-Annotations en 2017 : 58
-Annotations en 2018 : 10
-
+Annotations en 2016 :
+1854
+Annotations en 2017 :
+484
+Annotations en 2018 :
+588
