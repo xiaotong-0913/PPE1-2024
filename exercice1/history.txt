@@ -1,1 +1,71 @@
-exercice1
+       mkdir ~/Exercice1
+       cd ~/Exercice1
+       wget http://plurital.org/ppe1/seance1/archive-29.zip
+       unzip archive-29.zip
+       ls *.txt
+       cd ./txt
+       mkdir ./txt
+       mv *.txt ./txt
+       mkdir -p ./{2016, 2017, 2018}
+       mkdir -p ./2016 2017 2018
+       mv 2016_* ./2016
+       mv 2017_* ./2017
+       mv 2018_* ./2018
+       cd 2016
+       mkdir -p ./ 01 02 03 04 05 06 07 08 09 10 11 12
+       mv 2016_01* 01
+       mv 2016_02* 02
+       mv 2016_03* 03
+       mv 2016_04* 04
+       mv 2016_05* 05
+       mv 2016_06* 06
+       mv 2016_07* 07
+       mv 2016_08* 08
+       mv 2016_09* 09
+       mv 2016_10* 10
+       mv 2016_11* 11
+       mv 2016_12* 12
+       for i in {01..12}; do mv "2017_$i"* "$i"; done
+       for i in {01..12}; do mkdir -p"$i"; mv "2017_$i"* "$i"; done
+       mkdir -p ./ 01 02 03 04 05 06 07 08 09 10 11 12
+       for i in {01..12}; do mv "2017_$i"* "$i"; done
+       mkdir -p ./ 01 02 03 04 05 06 07 08 09 10 11 12
+       for i in {01..12}; do mv "2018_$i"* "$i"; done
+       ls *.ann
+       cd ./ann
+       mkdir ./ann
+       mv *.ann ./ann
+       mkdir -p ./{2016, 2017, 2018}
+       mkdir -p ./2016 2017 2018
+       mv 2016_* ./2016
+       mv 2017_* ./2017
+       mv 2018_* ./2018
+       cd 2016
+       mkdir -p ./ 01 02 03 04 05 06 07 08 09 10 11 12
+       mv 2016_01* 01
+       mv 2016_02* 02
+       mv 2016_03* 03
+       mv 2016_04* 04
+       mv 2016_05* 05
+       mv 2016_06* 06
+       mv 2016_07* 07
+       mv 2016_08* 08
+       mv 2016_09* 09
+       mv 2016_10* 10
+       mv 2016_11* 11
+       mv 2016_12* 12
+       for i in {01..12}; do mv "2017_$i"* "$i"; done
+       for i in {01..12}; do mkdir -p"$i"; mv "2017_$i"* "$i"; done
+       mkdir -p ./ 01 02 03 04 05 06 07 08 09 10 11 12
+       for i in {01..12}; do mv "2017_$i"* "$i"; done
+       mkdir -p ./ 01 02 03 04 05 06 07 08 09 10 11 12
+       for i in {01..12}; do mv "2018_$i"* "$i"; done
+       cd ..
+       cd ..
+       mkdir -p ./ Berlin, Kyoto, Paris, Rome, Taipei, Tokyo, Washington
+       for i in {Berlin, Kyoto, Paris, Rome, Taipei, Tokyo, Washington}; do mv *"$i"* "$i"; done
+       mkdir docs
+       mv *EnergieEolienne* ./hxt/docs
+       zip Exercice1 hxt
+       history
+
