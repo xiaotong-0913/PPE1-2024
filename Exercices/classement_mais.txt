@@ -1,0 +1,15 @@
+      2 Paris
+      2 RDC
+      2 Rome
+      2 Royaume-Uni
+      2 Saturne
+      2 Soudan du Sud
+      2 Tchad
+      2 Tchad
+      2 Yémen
+      3 Britannique
+      3 Cameroun
+      4 Haïti
+      4 Landes
+      5 France
+      9 France
