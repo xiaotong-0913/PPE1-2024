@@ -1,64 +1,47 @@
-Error
+Ex1.a:
 
-txt
- 692  cd Exercices
-  693  echo "Annotations en 2016 :" > comptes.txt
-  694  cat comptes.txt
-  695  grep -r "2016" Exercice1/hxt/ann/2016 | wc -l >> comptes.txt
-  696  grep -r "2016" /home/hxt/Exercice1/hxt/ann/2016/*.ann | wc -l >> comptes.txt
-  697  cd
-  698  grep -r "2016" Exercice1/hxt/ann/2016 | wc -l >> PPE1-2024/Exercices/comptes.txt
-  699  echo "Annotations en 2017 :" >> PPE1-2024/Exercices/comptes.txt
-  700  grep -r "2017" Exercice1/hxt/ann/2017 | wc -l >> PPE1-2024/Exercices/comptes.txt
-  701  echo "Annotations en 2018 :" >> PPE1-2024/Exercices/comptes.txt
-  702  grep -r "2018" Exercice1/hxt/ann/2018 | wc -l >> PPE1-2024/Exercices/comptes.txt
-  703  cat PPE1-2024/Exercices/comptes.txt
-  704  cd PPE1-2024/Exercices/comptes.txt
-  705  git add PPE1-2024/Exercices/comptes.txt
-  706  cd /home/hxt/PPE1-2024/Exercices/
-  707  git add comptes.txt
-  708  nano comptes.txt
-  709  git add comptes.txt
-  710  git commit -m "Compter le nombre d’annotations par année"
-  716  git pull
-  717  git push
-  719  cat comptes.txt
-  721  git add comptes.txt
-  722  git commit -m "Compter le nombre d’annotations par année"
-  723  git push
-  724  git status
-  725  echo "Location en 2016 :" > Locations.txt
-  726  cd
-  727  grep -r "Location" Exercice1/hxt/2016/ann | wc -l >> Locations.txt
-  728  grep -r "Location" Exercice1/hxt/ann/2016 | wc -l >> PPE1-2024/Exercices/Locations.txt
-  729  echo "Location en 2017 :" >> PPE1-2024/Exercices/Locations.txt
-  730  grep -r "Location" Exercice1/hxt/ann/2017 | wc -l >> PPE1-2024/Exercices/Locations.txt
-  731  echo "Location en 2018 : " >> PPE1-2024/Exercices/Locations.txt
-  732  grep -r "Location" Exercice1/hxt/ann/2018 | wc -l >> PPE1-2024/Exercices/Locations.txt
-  733  cat PPE1-2024/Exercices/Locations.txt
-  734  nano PPE1-2024/Exercices/Locations.txt
-  735  grep -r "Location" Exercice1/hxt/ann/2016 | wc -l >> PPE1-2024/Exercices/Locations.txt
-  736  nano PPE1-2024/Exercices/Locations.txt
-  737  git add PPE1-2024/Exercices/Locations.txt
-  738  cd PPE1-2024/Exercices
-  739  git add Locations.txt
-  740  git commit -m "Locations"
-  741  git pull
-  742  git push
-  743  git status
-  744  cd
-  745  grep "Location" Exercice1/hxt/ann/2016 | cut -f3 | sort | uniq -c | sort -nr | head -15 > PPE1-2024/Exercices/classement_2016.txt
-  746  grep -r  "Location" Exercice1/hxt/ann/2016 | cut -f3 | sort | uniq -c | sort -nr | head -15 > PPE1-2024/Exercices/classement_2016.txt
-  747  grep -r  "Location" Exercice1/hxt/ann/2017 | cut -f3 | sort | uniq -c | sort -nr | head -15 > PPE1-2024/Exercices/classement_2017.txt
-  748  cat PPE1-2024/Exercices/classement_2016.txt
-  749  PPE1-2024/Exercices/classement_2017.txt
-  750  cat PPE1-2024/Exercices/classement_2017.txt
-  751  grep -r  "Location" Exercice1/hxt/ann/2018 | cut -f3 | sort | uniq -c | sort -nr | head -15 > PPE1-2024/Exercices/classement_2018.txt
-  754  cd PPE1-2024
-  755  cd Exercices
-  757  git add .
-  758  git commit -m "classments"
-  759  git pull
-  760  git push
-  761  git status
-  762  history
+echo Annotations en 2016 : > comptes.txt
+grep -r "2016" ~/Exercice1/ann/2016 | wc -l >> comptes.txt
+
+echo Annotations en 2017 : >> comptes.txt
+grep -r "2017" ~/Exercice1/ann/2017 | wc -l >> comptes.txt
+
+echo Annotations en 2018 : >> comptes.txt
+grep -r "2018" ~/Exercice1/ann/2018 | wc -l >> comptes.txt
+
+
+cat Exercices/comptes.txt
+git add comptes.txt
+git commit -m "Compter le nombre d’annotations par année"
+git push
+
+Ex1.b:
+
+echo “Location en 2016” : > Locations.txt
+grep -r Location ~/Exercice1/ann/2016 | wc -l >> Locations.txt
+
+echo “Location en 2017” : > Locations.txt
+grep -r Location ~/Exercice1/ann/2017 | wc -l >> Locations.txt
+
+echo “Location en 2018” : > Locations.txt
+grep -r Location ~/Exercice1/ann/2018 | wc -l >> Locations.txt
+
+git add Locations.txt
+git commit -m "Locations"
+git push
+
+Ex 2.a:
+
+grep -r  "Location" Exercice1/hxt/ann/2016 | cut -f3 | sort | uniq -c | sort -nr | head -15 > PPE1-2024/Exercices/classement_2016.txt
+
+grep -r  "Location" Exercice1/hxt/ann/2017 | cut -f3 | sort | uniq -c | sort -nr | head -15 > PPE1-2024/Exercices/classement_2017.txt
+
+grep -r  "Location" Exercice1/hxt/ann/2018 | cut -f3 | sort | uniq -c | sort -nr | head -15 > PPE1-2024/Exercices/classement_2018.txt
+
+Ex2.b:
+
+grep Location ~/Exercice1/ann/2017/*/*_03_* | cut -f3 |uniq -c | sort -n | tail -n15 > ~/PPE1-2024/Exercices/classement_mais.txt
+
+
+git tag fin-ex-pipelines
+
