@@ -1,4 +1,4 @@
- 
+Numéro de ligne	Code HTTP	Encodage	Nombre de mots	URL
 1	200	UTF-8	15727	https://fr.wikipedia.org/wiki/Robot
 2	200	UTF-8	3916	https://fr.wikipedia.org/wiki/Robot_de_cuisine
 3	301	N/A	0	fr.wikipedia.org/wiki/Robot_d%27indexation

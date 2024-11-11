@@ -13,6 +13,7 @@ echo "Le fichier à lire : $1"
 # Définir le chemin du fichier de sortie
 output_file="/home/hxt/PPE1-2024/miniprojet/tableaux/tableau-fr.tsv"
 
+echo -e "Numéro de ligne\tCode HTTP\tEncodage\tNombre de mots\tURL" > "$output_file"
 
 # Initialiser un compteur de lignes
 line_number=1
