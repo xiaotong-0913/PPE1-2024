@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>miniprojet3</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        bienvenue au miniprojet 3
+      </h1>
+      </p>C'est une introduction rapide: on va faire la page HTML qui contient le tableau, on modifie son CSS directement jusqu’à obtenir un résultat plus élégant</p>
+      <h2 class="title"> vous aimez bien le miniprojet ?</h2>
+      <P> Si vous aimez bien le miniprojet, vous pouvez suivre ... </P>
+      <p><a href="https://github.com/xiaotong-0913/PPE1-2024/blob/main/miniprojet/tableaux/tableau-fr.html" > Cliquez sur moi</a></p>
+    </div>
+  </section>
+  </body>
+</html>
